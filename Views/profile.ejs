@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>G-uploader</title>
+    </head>
+
+    
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li> 
+                <li><a href="/auth/logout">logout</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <div>
+                <h1>G-uploader Profile</h1>   
+                <img src=<%= loggedUser.profilePicture %> width="100" height="100"/>  
+                <h4>Name : <%= loggedUser.name %></h4>
+                <h4>Email : <%= loggedUser.email %></h4>
+            </div>
+            
+            
+             
+    </body>
+</html>
