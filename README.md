@@ -7,4 +7,4 @@ Installation Required Dependencies
 Run the Application
     -> npm start
 
-    Go to : http://localhost:3000
+ Now Application Running on: http://localhost:3000
