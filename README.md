@@ -1,4 +1,4 @@
-
+GDriveUploader OAuth 2.0
 
 
 Installation Required Dependencies
@@ -7,4 +7,4 @@ Installation Required Dependencies
 Run the Application
     -> npm start
 
-    Open the browser and visit : http://localhost:3000
+    Go to : http://localhost:3000
