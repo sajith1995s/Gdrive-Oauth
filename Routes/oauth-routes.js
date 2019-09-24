@@ -11,11 +11,11 @@ router.get('/google', pasport.authenticate('google', {
     scope:['profile', 'email', 'https://www.googleapis.com/auth/drive.file']
 }));
 
-//auth logout
+//logout user
 router.get('/logout', (req, res) => {
-     
+     req.logOut();
 
-    res.send('login out')
+     res.redirect('/')
 });
 
 //redirect endpoint

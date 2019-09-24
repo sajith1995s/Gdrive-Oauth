@@ -4,11 +4,18 @@ const profileRoutes = require('./Routes/profile-routes');
 const passportSetup = require('./Utils/passport-utils');
 const cookieSession = require('cookie-session');
 const passport = require('passport')
+const bodyParser = require("body-parser");
 
 
 const app = express()
 
 app.set('view engine', 'ejs')
+
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
+app.use(bodyParser.json());
 
 // set the cookies to be used 
 app.use(cookieSession({

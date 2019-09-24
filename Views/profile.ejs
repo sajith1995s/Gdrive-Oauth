@@ -23,6 +23,22 @@
                 <h4>Email : <%= loggedUser.email %></h4>
             </div>
             
+            <div> 
+                <form action="/profile/upload" method="post" enctype="multipart/form-data">
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>File</span>
+                            <input type="file" required name="file_upload">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div> 
+                        <button class="btn btn-primary center-block" type="submit"><i class="fa fa-upload"></i> Upload </button> 
+                        <button class="btn btn-primary center-block" onclick="window.location.href='/profile/listFiles'" ><i class="fa fa-show"></i> Get Files </button> 
+                         
+                </form>
+            </div>
             
              
     </body>
